@@ -1,0 +1,113 @@
+.menuRound,
+.buttonRound {
+  width: 100px;
+  height: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.menuRound {
+  text-align: center;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  transition: transform 1.125s cubic-bezier(0.39, 1.52, 0.46, 0.92);
+  transform: scale3d(1, 1, 1);
+  transform-origin: top left;
+  cursor: pointer;
+}
+
+.buttonRound {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 33%;
+  font: 25px/100px Alegreya Sans, sans-serif;
+  transition: transform 0.75s cubic-bezier(0.39, 1.52, 0.46, 0.92);
+  will-change: transform;
+}
+
+.buttonRound.closedRound {
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.mainRound {
+  color: #030f01;
+  text-align: center;
+  mix-blend-mode: normal;
+  line-height: 100px;
+  box-shadow: 0 0 0 5px rgba(3, 15, 1, 0.1);
+  transition: border-color 0.75s, color 0.75s;
+  will-change: color, border-color, background;
+}
+
+.closedRound .mainRound {
+  color: #f8f7f2;
+  box-shadow: 0 0 0 5px rgba(3, 15, 1, 0);
+}
+
+.homeRound {
+  background-color: #1ba5cd;
+  top: 0%;
+  left: 225%;
+  background-image: url(https://bennettfeely.com/cdpn/home.svg);
+  transition-duration: 0.525s;
+}
+
+.closedRound .homeRound {
+  transform: translate3d(-225%, -10%, 0) rotate(-180deg);
+}
+
+.musicRound {
+  background-color: #1ab254;
+  top: 86.103675%;
+  left: 207.873%;
+  background-image: url(https://bennettfeely.com/cdpn/music.svg);
+  transition-duration: 0.675s;
+}
+
+.closedRound .musicRound {
+  transform: translate3d(-198.36244%, -89.193835%, 0) rotate(-180deg);
+}
+
+.messagesRound {
+  background-color: #fec72e;
+  top: 159.099075%;
+  left: 159.099075%;
+  background-image: url(https://bennettfeely.com/cdpn/messages.svg);
+  transition-duration: 0.825s;
+}
+
+.closedRound .messagesRound {
+  transform: translate3d(-153.221215%, -151.008915%, 0) rotate(-180deg);
+}
+
+.placesRound {
+  background-color: #fa7d39;
+  top: 207.873%;
+  left: 86.103675%;
+  background-image: url(https://bennettfeely.com/cdpn/places.svg);
+  transition-duration: 0.975s;
+}
+
+.closedRound .placesRound {
+  transform: translate3d(-91.981535%, -199.78284%, 0) rotate(-180deg);
+}
+
+.bookmarkRound {
+  background-color: #ee5656;
+  top: 225%;
+  left: 0%;
+  background-image: url(https://bennettfeely.com/cdpn/bookmark.svg);
+  transition-duration: 1.125s;
+}
+
+.closedRound .bookmarkRound {
+  transform: translate3d(-9.51056%, -228.09016%, 0) rotate(-180deg);
+}
