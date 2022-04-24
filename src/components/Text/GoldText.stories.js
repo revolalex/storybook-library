@@ -5,7 +5,7 @@ import GoldText from './GoldText';
 
 export default {
   component: GoldText,
-  title: 'GoldText',
+  title: 'Text/GoldText',
   decorators: [
     (Story) => (
       <div style={{ margin: '3em' }}>

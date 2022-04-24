@@ -5,7 +5,7 @@ import MenuButton from './MenuButton';
 
 export default {
   component: MenuButton,
-  title: 'MenuButton',
+  title: 'Menu/MenuButton',
 };
 
 const Template = args => <MenuButton {...args}  />;

@@ -5,7 +5,7 @@ import MenuRound from './MenuRound';
 
 export default {
   component: MenuRound,
-  title: 'MenuRound',
+  title: 'Menu/MenuRound',
 };
 
 const Template = args => <MenuRound {...args}  />;

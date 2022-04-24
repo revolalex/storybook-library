@@ -3,7 +3,7 @@ import LoginSwape from './LoginSwape';
 
 export default {
   component: LoginSwape,
-  title: 'LoginSwape',
+  title: 'Login/LoginSwape',
   decorators: [
     (Story) => (
       <div style={{ margin: 0, padding:0 }}>
