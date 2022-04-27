@@ -8,12 +8,14 @@ export default {
   title: 'Buttons/NeonButton',
   decorators: [
     (Story) => (
-      <div style={{ backgroundColor:'black', width:"50vw", height:"50vh"}}>
+      <div style={{ background:'linear-gradient(#141e30, #243b55)', width:"100vw", height:"100vh"}}>
         <Story />
       </div>
     ),
   ],
 };
+
+
 
 const Template = args => <NeonButton {...args}  />;
 

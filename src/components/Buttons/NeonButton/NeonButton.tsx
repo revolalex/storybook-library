@@ -14,7 +14,7 @@ const NeonButton = (props: NeonButtonProps) => {
 
   return (
     <a
-        style={props.style}
+      style={props.style}
       className={props.class === undefined ? "myA" : props.class}
       href={props.link === undefined ? "/#" : props.link}
       onClick={handleClick}

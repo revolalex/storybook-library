@@ -6,7 +6,7 @@ const LoginBox = () => {
 
             <div class="login-box">
                 <h2>Login</h2>
-                <form style={{minHeight:"30vh"}}>
+                <form style={{minHeight:"300px"}}>
                     <div class="user-box">
                         <input type="text" name="" required />
                         <label>Username</label>
